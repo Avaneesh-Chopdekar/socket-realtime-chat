@@ -54,7 +54,7 @@ export default function Chat({ socket, username, room }: PropTypes) {
             <div
               className="message"
               key={index}
-              id={username === message.author ? "you" : "other"}
+              id={username !== message.author ? "you" : "other"}
             >
               <div>
                 <div className="message-content">
